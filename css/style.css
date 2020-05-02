@@ -4,7 +4,7 @@ body{
     margin: 0;
     background-image: url('../img/bg.png');
     background-repeat: no-repeat;
-    background-position: 1%;
+    background-position: 100%;
     background-size: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
