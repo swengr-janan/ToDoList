@@ -2,13 +2,17 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: 1%;
+    background-size: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 /* ------------ container ------------ */
 .container{
     padding:10px;
+    padding-top: 100px;
     width:380px;
     margin:0 auto;
 }
