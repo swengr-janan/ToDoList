@@ -3,7 +3,6 @@
 const clear = document.querySelector(".clear");
 const taskCount = document.querySelector(".task-count");
 const dateElement = document.getElementById("date");
-const timeElement = document.getElementById("time");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
@@ -51,7 +50,15 @@ const timeOpt = { hour: '2-digit', minute: '2-digit' };
 const today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
-timeElement.innerHTML = today.toLocaleTimeString([], timeOpt);
+
+
+setInterval(function tick(){
+    let timeElement = document.getElementById("time");
+    let time = new Date().toLocaleTimeString();
+    timeElement.innerHTML = time;
+}, 1000)
+
+
 
     taskCount.innerHTML = `
                         <i class="fa fa-check-circle">&nbsp;${doneCount}/${LIST.length}</i>  
